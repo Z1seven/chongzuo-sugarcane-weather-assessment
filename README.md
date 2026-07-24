@@ -117,6 +117,24 @@ Because only eight area observations and four exploratory forecast years are ava
 - Bootstrap seed: 20260721.
 - No archived machine-specific execution logs are required for reproduction.
 
+## PG-LiteTransformer configuration
+
+| Component | Configuration |
+|---|---|
+| Weather input | 4 stage tokens × 8 features |
+| Embedding | 8 → 8 |
+| Self-attention | Single head, dimension 8 |
+| History branch | 3 → 6 with GELU |
+| Fused representation | 14 dimensions |
+| Residual head | 14 → 10 → 1 |
+| Dropout | 0.2 |
+| Optimizer | AdamW |
+| Learning rate | 0.008 |
+| Weight decay | 0.03 |
+| Epochs | 80 |
+| Seeds | 7, 19, 31 |
+| Trainable parameters | 497 |
+
 ## License and data attribution
 
 The MIT License applies to the source code. Statistical and reanalysis data remain subject to the terms and attribution requirements of their original providers.

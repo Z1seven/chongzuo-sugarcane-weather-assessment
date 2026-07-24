@@ -1,0 +1,12 @@
+Validated execution environment used to regenerate the included outputs
+Date: 2026-07-24
+Python: 3.13.5
+NumPy: 2.3.5
+pandas: 2.2.3
+scikit-learn: 1.8.0
+PyTorch: 2.10.0+cpu
+Matplotlib: 3.10.8
+Device: CPU
+
+The code uses project-relative paths and does not require this exact environment.
+Small Transformer differences can occur across supported PyTorch versions.

@@ -1,0 +1,13 @@
+{
+  "years": 8,
+  "start_year": 2017,
+  "end_year": 2024,
+  "area_change_percent": -2.9556650246305383,
+  "production_change_percent": -4.107332985074031,
+  "yield_change_percent": -1.1867441419798452,
+  "area_cv_percent": 2.4643402331321473,
+  "yield_cv_percent": 3.12096899682881,
+  "area_production_pearson_r": 0.28603745376678413,
+  "yield_production_pearson_r": 0.6459188758755555,
+  "max_abs_decomposition_error_10k_t": 3.836930773104541e-13
+}

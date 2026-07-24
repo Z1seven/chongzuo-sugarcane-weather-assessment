@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "Chongzuo Sugarcane Weather-Information Assessment"
+type: software
+authors:
+  - family-names: Zhao
+    given-names: Shiqi
+  - family-names: Tang
+    given-names: Jinyun
+version: 2.0.0
+date-released: 2026-07-24
+license: MIT

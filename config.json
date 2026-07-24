@@ -1,0 +1,67 @@
+{
+  "data": {
+    "weather_csv": "data/daily_weather_2005_2024.csv",
+    "production_csv": "data/production_2005_2024.csv",
+    "output_dir": "outputs",
+    "sown_area_csv": "data/sown_area_2017_2024.csv"
+  },
+  "analysis": {
+    "forecast_start_year": 2013,
+    "forecast_end_year": 2024,
+    "phenology_stages": [
+      {
+        "name": "germination",
+        "start_month": 3,
+        "end_month": 4
+      },
+      {
+        "name": "tillering",
+        "start_month": 5,
+        "end_month": 6
+      },
+      {
+        "name": "elongation",
+        "start_month": 7,
+        "end_month": 9
+      },
+      {
+        "name": "maturity",
+        "start_month": 10,
+        "end_month": 12
+      }
+    ],
+    "gdd_base_c": 10.0,
+    "heat_day_threshold_c": 35.0,
+    "cold_day_threshold_c": 13.0,
+    "permutation_count": 5000,
+    "permutation_seed": 20260721,
+    "bootstrap_resamples": 250,
+    "bootstrap_seed": 20260721,
+    "area_sensitivity_forecast_start_year": 2021,
+    "area_sensitivity_forecast_end_year": 2024
+  },
+  "models": {
+    "residual_ridge_alpha": 30.0,
+    "trend_ridge_alpha": 1.0,
+    "weather_ridge_alpha": 20.0,
+    "svr_c": 10.0,
+    "svr_epsilon": 25.0,
+    "transformer": {
+      "latent_dim": 8,
+      "trend_hidden_dim": 6,
+      "head_hidden_dim": 10,
+      "dropout": 0.2,
+      "learning_rate": 0.008,
+      "weight_decay": 0.03,
+      "epochs": 80,
+      "seeds": [
+        7,
+        19,
+        31
+      ],
+      "device": "cpu"
+    },
+    "yield_trend_ridge_alpha": 1.0,
+    "yield_weather_ridge_alpha": 20.0
+  }
+}

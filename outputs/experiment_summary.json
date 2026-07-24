@@ -1,0 +1,145 @@
+{
+  "forecast_years": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "rolling_metrics": [
+    {
+      "model": "Persistence",
+      "forecast_years": 12,
+      "rmse": 70.01060514902966,
+      "mae": 59.456666666666706,
+      "mape_percent": 2.4003530175359478,
+      "r2": 0.4914823420669542
+    },
+    {
+      "model": "Residual Ridge",
+      "forecast_years": 12,
+      "rmse": 89.67335558434443,
+      "mae": 60.768293813069626,
+      "mape_percent": 2.4486723933593275,
+      "r2": 0.1657327067585469
+    },
+    {
+      "model": "Residual SVR",
+      "forecast_years": 12,
+      "rmse": 108.15177531547401,
+      "mae": 87.71114237247286,
+      "mape_percent": 3.582783189344036,
+      "r2": -0.21351648549496272
+    },
+    {
+      "model": "PG-LiteTransformer",
+      "forecast_years": 12,
+      "rmse": 85.00377272851351,
+      "mae": 66.91714325268288,
+      "mape_percent": 2.6812695966752367,
+      "r2": 0.2503565030625776
+    }
+  ],
+  "ablation_metrics": [
+    {
+      "model": "Trend only",
+      "forecast_years": 12,
+      "rmse": 165.29206173729352,
+      "mae": 136.9496481188523,
+      "mape_percent": 5.518814235732022,
+      "r2": -1.8345385547320623
+    },
+    {
+      "model": "Trend + temperature",
+      "forecast_years": 12,
+      "rmse": 166.50490129684206,
+      "mae": 124.00346139452272,
+      "mape_percent": 4.991994847434494,
+      "r2": -1.8762883293729784
+    },
+    {
+      "model": "Trend + water",
+      "forecast_years": 12,
+      "rmse": 153.39596319076134,
+      "mae": 128.69232556903236,
+      "mape_percent": 5.174256814131375,
+      "r2": -1.4412161616876187
+    },
+    {
+      "model": "Trend + extreme stress",
+      "forecast_years": 12,
+      "rmse": 147.43341796864388,
+      "mae": 127.61099312593733,
+      "mape_percent": 5.14288000192481,
+      "r2": -1.2551230442820578
+    },
+    {
+      "model": "Trend + complete weather",
+      "forecast_years": 12,
+      "rmse": 143.20466868123492,
+      "mae": 110.42687793082409,
+      "mape_percent": 4.442920499302574,
+      "r2": -1.127613457493018
+    }
+  ],
+  "permutation": {
+    "trend_rmse": 165.29206173729267,
+    "complete_weather_rmse": 143.20467833593074,
+    "observed_rmse_improvement": 22.087383401361933,
+    "permutation_count": 5000,
+    "seed": 20260721,
+    "one_sided_p_value": 0.039192161567686463,
+    "null_mean": -16.566589581538985,
+    "null_sd": 22.30680269754342,
+    "null_q025": -61.788523086030956,
+    "null_q975": 26.776739954466798
+  },
+  "bootstrap_coverage_rate": 0.8333333333333334,
+  "area_yield_summary": {
+    "years": 8,
+    "start_year": 2017,
+    "end_year": 2024,
+    "area_change_percent": -2.9556650246305383,
+    "production_change_percent": -4.107332985074031,
+    "yield_change_percent": -1.1867441419798452,
+    "area_cv_percent": 2.4643402331321473,
+    "yield_cv_percent": 3.12096899682881,
+    "area_production_pearson_r": 0.28603745376678413,
+    "yield_production_pearson_r": 0.6459188758755555,
+    "max_abs_decomposition_error_10k_t": 3.836930773104541e-13
+  },
+  "yield_sensitivity_metrics": [
+    {
+      "model": "Yield persistence",
+      "forecast_years": 4,
+      "rmse": 4.20611359625202,
+      "mae": 3.5191932736224274,
+      "mape_percent": 3.8656486123042177,
+      "r2": -0.9338129065094145
+    },
+    {
+      "model": "Yield trend only",
+      "forecast_years": 4,
+      "rmse": 4.536685688775121,
+      "mae": 3.6437274743568366,
+      "mape_percent": 4.0294976146322155,
+      "r2": -1.2497271113343382
+    },
+    {
+      "model": "Yield trend + weather",
+      "forecast_years": 4,
+      "rmse": 4.927370894911128,
+      "mae": 3.994389514068647,
+      "mape_percent": 4.422242087635018,
+      "r2": -1.6538902984510448
+    }
+  ],
+  "note": "The 2017-2024 area/yield analysis is exploratory because only eight area observations and four rolling forecast years are available."
+}

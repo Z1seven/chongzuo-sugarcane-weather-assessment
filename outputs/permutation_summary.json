@@ -1,0 +1,12 @@
+{
+  "trend_rmse": 165.29206173729267,
+  "complete_weather_rmse": 143.20467833593074,
+  "observed_rmse_improvement": 22.087383401361933,
+  "permutation_count": 5000,
+  "seed": 20260721,
+  "one_sided_p_value": 0.039192161567686463,
+  "null_mean": -16.566589581538985,
+  "null_sd": 22.30680269754342,
+  "null_q025": -61.788523086030956,
+  "null_q975": 26.776739954466798
+}

@@ -1,10 +1,3 @@
-## Repository
-
-https://github.com/Z1seven/chongzuo-sugarcane-weather-assessment
-
-This repository corresponds to release `v2.0.0` of the analysis
-associated with the manuscript.
-
 # Chongzuo Sugarcane Weather-Information Assessment
 
 This repository contains the complete analysis code and processed data for the manuscript:

@@ -90,7 +90,7 @@ The persistence model remains the strongest overall production forecast. The mai
 
 Sown-area records for 2017-2024 were obtained from the Guangxi Statistical Data Query System, table A0303, accessed on 24 July 2026:
 
-https://gxsj.tjj.gxzf.gov.cn:18090/pub/advquery/advquery.htm?m=advquery&cn=A0303&selkey=cd75175af8854168918afd89cd203197](https://gxsj.tjj.gxzf.gov.cn:18090/pub/advquery/advquery.htm?m=advquery&cn=A0303&selkey=6bafcfcd9b444940b3017fa584adedb9
+https://gxsj.tjj.gxzf.gov.cn:18090/pub/advquery/advquery.htm?m=advquery&cn=A0303&selkey=6bafcfcd9b444940b3017fa584adedb9
 
 Apparent yield is calculated as:
 
